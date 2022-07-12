@@ -2,7 +2,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <div class="footer1">
         <img class="iconefooter" src="/Icone Group 2.png" alt="Icone">
-        <img class="logofooter" src="/Logo2.png" alt="Logo">
+        <img class="logofooter" src="/Logo.png" alt="Logo">
         <p class="doador">Seja um doador</p>
     </div>
     <div class="footer2e3">
@@ -35,7 +35,7 @@
 
 <style>
     .viela{
-        width: 1440px;
+        max-width: 1440px;
         height: 307px;
         margin:15%;
         position: absolute;
