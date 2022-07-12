@@ -80,7 +80,6 @@
         font-family: 'Encode Sans';
         font-weight: 700;
         font-size: 16px;
-    
     }
 
     .footer2e3{
