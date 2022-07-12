@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <footer class="viela">
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <div class="footer1">
@@ -132,4 +133,9 @@
 }
 
 
+=======
+<footer class="viela"></footer>
+
+<style>
+>>>>>>> e9666eb9ca9597479a2b834cfb8d9612e4e5dc0a
 </style>
