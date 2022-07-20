@@ -1,14 +1,16 @@
-<<<<<<< HEAD
-<footer class="viela">
+<footer>
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-    <div class="footer1">
-        <img class="iconefooter" src="/Icone Group 2.png" alt="Icone">
-        <img class="logofooter" src="/Logo.png" alt="Logo">
-        <p class="doador">Seja um doador</p>
-    </div>
-    <div class="footer2e3">
+    <section class="footerviela" >
+        <div class="footer1">
+            <div class="iconefooter">
+                <img class="logofooter" src="/Logosvg.svg" alt="Logo">
+            </div>
+            <button class="doador">Seja um doador</button>
+        </div>
+
+        
         <div class="footer2">
-            <div>
+            <div class="footer2email" >
                 <h3 class="footerh3">Seja um parceiro viela?</h3>
                 <a class="footerlinks" href="mailto:projeto.viela@gmail.com"> projeto.viela@gmail.com</a>
             </div>
@@ -19,6 +21,8 @@
                 <a class="footerlinks" href="#">Atividades</a>
             </div>
         </div>
+
+        
         <div class="footer3">
             <h3 class="footerh3">Redes sociais</h3>
             <div class="footer3lista">
@@ -28,87 +32,93 @@
                 <p>Viela 2022 - Todos os direitos reservados</p>
             </div>
         </div>
-    </div>
-
-    
+    </section>    
 
 </footer>
 
 <style>
-    .viela{
+    footer{
+        width: 100%;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+    }
+    .footerviela{
         max-width: 1440px;
         height: 307px;
-        margin:15%;
-        position: absolute;
         display: flex;
         flex-direction: row;
-        left: 0px;
-        top: 2000px;
-        background-color: #000;
+        align-items: center;
         color: #fff;
        
        
     }
     .footer1{
-        width: 564px;
+        width: 400px;
         height: 307px;
+        display: flex;
+        flex-direction: row;
 
     }
-    
     .iconefooter{
-        position:absolute;
-        top: 30px ;
-        left: 118px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        background: #ffffff;
+        width: 270px; height: 270px;
+        clip-path: polygon(75% 50%, 75.1342% 49.983%, 75.5195% 49.8668%, 76.1054% 49.5639%, 76.8147% 49.0091%, 77.5525% 48.1673%, 78.2173% 47.0378%, 78.713% 45.6543%, 78.9605% 44.0813%, 78.9068% 42.4063%, 78.5317% 40.7295%, 77.8496% 39.1524%, 76.9084% 37.7658%, 75.7836% 36.6386%, 74.5694% 35.8108%, 73.3677% 35.2877%, 72.276% 35.0404%, 71.376% 35.0085%, 70.724% 35.1078%, 70.344% 35.2402%, 70.2254% 35.3054%, 70.3241% 35.2128%, 70.5674% 34.8923%, 70.8633% 34.3028%, 71.1111% 33.437%, 71.2132% 32.3223%, 71.0871% 31.0178%, 70.675% 29.6072%, 69.9506% 28.1892%, 68.9226% 26.8655%, 67.6336% 25.7295%, 66.1548% 24.8546%, 64.5783% 24.2859%, 63.0058% 24.0352%, 61.5369% 24.0791%, 60.2572% 24.3623%, 59.2286% 24.8039%, 58.4818% 25.3071%, 58.0126% 25.7707%, 57.783% 26.1012%, 57.7254% 26.2236%, 57.7508% 26.0907%, 57.7593% 25.6884%, 57.6522% 25.0376%, 57.3438% 24.1915%, 56.7712% 23.2297%, 55.9024% 22.2484%, 54.7398% 21.3494%, 53.3203% 20.628%, 51.7106% 20.1614%, 50% 20%, 48.2894% 20.1614%, 46.6797% 20.628%, 45.2602% 21.3494%, 44.0976% 22.2484%, 43.2288% 23.2297%, 42.6562% 24.1915%, 42.3478% 25.0376%, 42.2407% 25.6884%, 42.2492% 26.0907%, 42.2746% 26.2236%, 42.217% 26.1012%, 41.9874% 25.7707%, 41.5182% 25.3071%, 40.7714% 24.8039%, 39.7428% 24.3623%, 38.4631% 24.0791%, 36.9942% 24.0352%, 35.4217% 24.2859%, 33.8452% 24.8546%, 32.3664% 25.7295%, 31.0774% 26.8655%, 30.0494% 28.1892%, 29.325% 29.6072%, 28.9129% 31.0178%, 28.7868% 32.3223%, 28.8889% 33.437%, 29.1367% 34.3028%, 29.4326% 34.8923%, 29.6759% 35.2128%, 29.7746% 35.3054%, 29.656% 35.2402%, 29.276% 35.1078%, 28.624% 35.0085%, 27.724% 35.0404%, 26.6323% 35.2877%, 25.4306% 35.8108%, 24.2164% 36.6386%, 23.0916% 37.7658%, 22.1504% 39.1524%, 21.4683% 40.7295%, 21.0932% 42.4063%, 21.0395% 44.0813%, 21.287% 45.6543%, 21.7827% 47.0378%, 22.4475% 48.1673%, 23.1853% 49.0091%, 23.8947% 49.5639%, 24.4805% 49.8668%, 24.8658% 49.983%, 25% 50%, 24.8658% 50.017%, 24.4805% 50.1332%, 23.8947% 50.4361%, 23.1853% 50.9909%, 22.4475% 51.8327%, 21.7827% 52.9622%, 21.287% 54.3457%, 21.0395% 55.9187%, 21.0932% 57.5937%, 21.4683% 59.2705%, 22.1504% 60.8476%, 23.0916% 62.2342%, 24.2164% 63.3614%, 25.4306% 64.1892%, 26.6323% 64.7123%, 27.724% 64.9596%, 28.624% 64.9915%, 29.276% 64.8922%, 29.656% 64.7598%, 29.7746% 64.6946%, 29.6759% 64.7873%, 29.4326% 65.1077%, 29.1367% 65.6972%, 28.8889% 66.563%, 28.7868% 67.6777%, 28.9129% 68.9822%, 29.325% 70.3928%, 30.0494% 71.8108%, 31.0774% 73.1345%, 32.3664% 74.2705%, 33.8452% 75.1455%, 35.4217% 75.7141%, 36.9942% 75.9648%, 38.4631% 75.9209%, 39.7428% 75.6377%, 40.7714% 75.1961%, 41.5182% 74.6929%, 41.9874% 74.2293%, 42.217% 73.8988%, 42.2746% 73.7764%, 42.2492% 73.9093%, 42.2407% 74.3116%, 42.3478% 74.9624%, 42.6562% 75.8085%, 43.2288% 76.7703%, 44.0976% 77.7516%, 45.2602% 78.6506%, 46.6797% 79.372%, 48.2894% 79.8386%, 50% 80%, 51.7106% 79.8386%, 53.3203% 79.372%, 54.7398% 78.6506%, 55.9024% 77.7516%, 56.7712% 76.7703%, 57.3438% 75.8085%, 57.6522% 74.9624%, 57.7593% 74.3116%, 57.7508% 73.9093%, 57.7254% 73.7764%, 57.783% 73.8988%, 58.0126% 74.2293%, 58.4818% 74.6929%, 59.2286% 75.1961%, 60.2572% 75.6377%, 61.5369% 75.9209%, 63.0058% 75.9648%, 64.5783% 75.7141%, 66.1548% 75.1455%, 67.6336% 74.2705%, 68.9226% 73.1345%, 69.9506% 71.8108%, 70.675% 70.3928%, 71.0871% 68.9822%, 71.2132% 67.6777%, 71.1111% 66.563%, 70.8633% 65.6972%, 70.5674% 65.1077%, 70.3241% 64.7873%, 70.2254% 64.6946%, 70.344% 64.7598%, 70.724% 64.8922%, 71.376% 64.9915%, 72.276% 64.9596%, 73.3677% 64.7123%, 74.5694% 64.1892%, 75.7836% 63.3614%, 76.9084% 62.2342%, 77.8496% 60.8476%, 78.5317% 59.2705%, 78.9068% 57.5937%, 78.9605% 55.9187%, 78.713% 54.3457%, 78.2173% 52.9622%, 77.5525% 51.8327%, 76.8147% 50.9909%, 76.1054% 50.4361%, 75.5195% 50.1332%, 75.1342% 50.017%);
+}
 
-    }
-    .logofooter{
-        position:absolute;
-        top: 125px;
-        left: 190px;
-        border-radius: 21px;
-    }
+
+
     .doador{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        min-width: 120px;
         position: absolute;
-        width: 119px;
-        height: 15px;
-        left: 267px;
-        top: 173px;
+        height: 10px;
         background-color: #ffdb00;
         border: 1px solid #FFFFFF;
         border-radius: 60px;
-        padding: 16px 40px;
+        padding: 18px 25px;
+        margin-top: 192px;
+        margin-left: 150px;
         color: #000;
         font-family: 'Encode Sans';
         font-weight: 700;
         font-size: 16px;
+        line-height: 11px;
+
     }
 
-    .footer2e3{
-        display: flex;
-        flex-direction: row;
-        width: 734px;
-        height: 172px;
-        margin:61px 142px 78px 564px;
-        margin-block:61px 142px 78px 564px ;
-    }
+
     .footer2{
         flex-direction: column;
-        width: 448px;
-        height: 172px;
+        width: 400px;
+        height: 307px;
+        margin-top: 100px;
         font-family: 'Encode Sans';
         font-weight: 400;
+        
+
     }
-    .footer2a{
-        line-height: 1px;
-    }
+
     .footerh3{
         font-family: 'Encode Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 24px;
     }
+    .footer2email{
+        line-height: 16px;
+    }
     .footer2lista{
+        margin-top: 40px;
         word-spacing: 32px;
+        line-height:16px;
     }
     .footerlinks{
         color: #ffffff;
@@ -120,22 +130,14 @@
         padding-bottom: 4px;
     }
     .footer3{
-        width: 330px;
-        height: 172px;
+        width: 400px;
+        height: 307px;
+        margin-top: 90px;
         font-family: 'Encode Sans';
         font-weight: 400;
     }
     #liFooter{
         padding-bottom: 15px;
         list-style-type: none;
-
-
-}
-
-
-=======
-<footer class="viela"></footer>
-
-<style>
->>>>>>> e9666eb9ca9597479a2b834cfb8d9612e4e5dc0a
+    }
 </style>
