@@ -51,11 +51,7 @@
 
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap');
-            body { 
-                background-color: #FFFFFF;
-                font-family: 'Encode Sans';
-                padding: 0%;
-            }
+            
             header {
                 background-color: #FFFFFF;
                 display: flex;
@@ -369,7 +365,7 @@
                 }
             } 
             @media (max-width:900px) {
-                #iicoOpen {
+                #icoOpen {
                     top: 550px;
                 }
                 #icoCapsula {
