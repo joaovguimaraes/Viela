@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+
+=======
 <div class="viela">
     <header>
         <img id="logoHeader" alt="Projeto Viela"src="LogoHeader.jpg">
@@ -385,4 +388,5 @@
                 }
             }
 </style>
+>>>>>>> 02841202d801ed41cae8a92c8b04b81543829b7a
  
