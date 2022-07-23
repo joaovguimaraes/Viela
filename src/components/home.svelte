@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 <div class="viela">
     <header>
         <img id="logoHeader" alt="Projeto Viela"src="LogoHeader.jpg">
