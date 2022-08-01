@@ -1,7 +1,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 <section id="novidades">
     <div class="container">
-        <img class="fotobuiu" src="Imagens/image 7.svg" alt="Foto Buiu no Viela">
+        <img class="fotobuiu" src="/image 7.svg" alt="Foto Buiu no Viela">
         <div class="informações">
             <div>
                 <h4>Novidades</h4>

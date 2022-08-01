@@ -1,17 +1,13 @@
 <script>
-<<<<<<< HEAD
-	import novidades-blog from "./components/novidades-blog.svelte";
-=======
+
+	import NovidadesBlog from "./components/NovidadesBlog.svelte";
 	import FooterBlog from "./components/footerBlog.svelte";
->>>>>>> d9a8d38fdb0e6b0c4eaa9c7b7b505fa8dde4017d
+
 </script>
 
 <main>
-<<<<<<< HEAD
-    <novidades-blog/>
-=======
+    <NovidadesBlog />
     <FooterBlog />
->>>>>>> d9a8d38fdb0e6b0c4eaa9c7b7b505fa8dde4017d
 
 </main>
 
