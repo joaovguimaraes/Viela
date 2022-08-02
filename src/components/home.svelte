@@ -3,8 +3,11 @@
         <img id="logoHeader" alt="Projeto Viela"src="LogoHeader.jpg">
         <div class="headerList-Button">
             <ul class="headerList">
+                <!-- svelte-ignore a11y-invalid-attribute -->
                 <li><a class="linkHeader" href="#">Sobre</a></li>
+                <!-- svelte-ignore a11y-invalid-attribute -->
                 <li><a class="linkHeader" href="#">Atividades</a></li>
+                <!-- svelte-ignore a11y-invalid-attribute -->
                 <li><a class="linkHeader" href="#">Blog</a></li>
             </ul>
             <button class="headerButton">Seja um doador</button>
@@ -20,9 +23,11 @@
         </p>
         <button class="homeButton">DOAR AGORA</button>
         <div class="icones" id="icoNuvem">
+            <!-- svelte-ignore a11y-missing-attribute -->
             <img src="Nuvem.svg">       
         </div>
         <div class="icones" id="icoOpen">
+            <!-- svelte-ignore a11y-missing-attribute -->
             <img src="icoOpen.svg">     
         </div>
         <div class="icones" id="icoCapsula"></div>
@@ -30,6 +35,7 @@
             <img id="imgNoRacismo" alt="Punho" src="noRacismo.png">
         </div>
         <div class="icones" id="Rectangle9">
+            <!-- svelte-ignore a11y-missing-attribute -->
             <img src="Rectangle9.svg">
             <p id="textPunho">no racismo</p>
         </div>
@@ -84,7 +90,7 @@
             .linkHeader{
                 padding: 0px 62px 0px 0px;
             }
-            a:visited{
+            a{
             color: black;
             text-decoration: none;
 

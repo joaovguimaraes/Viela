@@ -1,86 +1,119 @@
-<div class="viela">
-    <section class="institucional">
-        <div class="pontaPeInicial">
-            <img src="Buiu.svg">
-            <div class="textPontaPeInicial">
-                <h3>INSTITUCIONAL</h3>
-                <h2>O pontapé inicial</h2>
-                <p class="text">Em meados de 2009 Anderson “Buiu” sentiu a necessidade de<br>
-                    retribuir ao mundo a ajuda que recebeu e decidiu fazer na frente<br>
-                    “de casa” um cinema para as crianças da comunidade. Parecia <br>
-                    que não daria certo, até que um garotinho disse: “Peraí que eu<br>
-                    vou chamar os moleques”. Ele voltou com outras crianças, que <br>
-                    chamaram outras e… aconteceu, a sessão foi um sucesso. O<br>
-                    envolvimento e participação do cinema eram incríveis, mas ao <br>
-                    final das exibições parecia que faltava alguma coisa.
-                </p>
-            </div>
-        </div>
-        <div class="metodo">
-            <div>
-                <h4>Metodo</h4>
-                <p class="text">
-                    Então decidimos acrescentar um trecho de<br>
-                    leitura antes de cada sessão. Eureka!! Nasceu <br>
-                    o Projeto Viela. Atividades culturais ou <br>
-                    esportivas condicionadas à leitura.
-                </p>
-            </div>
-            <div>
-                <h4>Aprender brincando</h4>
-                <p class="text">
-                    O Futebol e Leitura era inevitável.<br>
-                    A combinação foi o que faltava para o projeto<br>
-                    deslanchar literalmente, afinal é a paixão<br>
-                    nacional incentivando o hábito da leitura.
-                </p>
-            </div>
-            <div>
-                <h4>Objetivo</h4>
-                <p class="text">
-                    Consolidamos nosso propósito que é dar<br>
-                     suporte e oferecer um caminho para a<br>
-                     formação de jovens e crianças do Jd.<br>
-                     Ibirapuera.
-                </p>
-            </div>
-        </div>
-        <div id="linhas">
-            <div class=container1></div>
-            <div class=container2>
-                <div id="polygono10">
-                    <div id="polygonoCor"><h2 class="valorShape">10</h2></div>
+<div class="institucional">
+
+        <section id="institucional">
+
+            <div class="pontaPeInicial">
+                <div class="buiu">
+                    <!-- svelte-ignore a11y-missing-attribute -->
+                    <img id="buiuIMG" src="Buiu.svg">
                 </div>
-                <p id="textPolygono" class="textBotom">Atividades<br>
-                    protostas</p>  
-            </div>
-            <div class=container3>
-                <div id="circulo68">
-                    <h2 class="valorShape">68</h2><p id="mil">mil</p>
+                <div class="textPontaPeInicial">
+                    <h3>INSTITUCIONAL</h3>
+                    <h2>O pontapé inicial</h2>
+                    <p class="text">Em meados de 2009 Anderson “Buiu” sentiu a necessidade de<br>
+                        retribuir ao mundo a ajuda que recebeu e decidiu fazer na frente<br>
+                        “de casa” um cinema para as crianças da comunidade. Parecia <br>
+                        que não daria certo, até que um garotinho disse: “Peraí que eu<br>
+                        vou chamar os moleques”. Ele voltou com outras crianças, que <br>
+                        chamaram outras e… aconteceu, a sessão foi um sucesso. O<br>
+                        envolvimento e participação do cinema eram incríveis, mas ao <br>
+                        final das exibições parecia que faltava alguma coisa.
+                    </p>
                 </div>
-                <p id="textCirculo" class="textBotom">Investidos<br> 
-                    no futuro</p>  
             </div>
-            <div class=container4>
-                <div id="flor374">
-                    <div id="florCor"><h2 class="valorShape">374</h2></div>
+
+            <div class="metodo">
+                <div>
+                    <h4>Metodo</h4>
+                    <p class="text">
+                        Então decidimos acrescentar um trecho de<br>
+                        leitura antes de cada sessão. Eureka!! Nasceu <br>
+                        o Projeto Viela. Atividades culturais ou <br>
+                        esportivas condicionadas à leitura.
+                    </p>
                 </div>
-                <p id="textFlor" class="textBotom">Crianças<br>
-                    Atendidas</p>  
-            </div>
-            <div class=container5>
-                <div id="estrela20">
-                    <div id="estrelaCor"><h2 id="estrelaNumero" class="valorShape">20</h2></div>
+                <div>
+                    <h4>Aprender brincando</h4>
+                    <p class="text">
+                        O Futebol e Leitura era inevitável.<br>
+                        A combinação foi o que faltava para o projeto<br>
+                        deslanchar literalmente, afinal é a paixão<br>
+                        nacional incentivando o hábito da leitura.
+                    </p>
                 </div>
-                <p id="textEstrela" class="textBotom">Time<br>
-                    Colaborativo</p>  
+                <div>
+                    <h4>Objetivo</h4>
+                    <p class="text">
+                        Consolidamos nosso propósito que é dar<br>
+                        suporte e oferecer um caminho para a<br>
+                        formação de jovens e crianças do Jd.<br>
+                        Ibirapuera.
+                    </p>
+                </div>
             </div>
-        </div>
+
+            <div id="linhas">
+
+                <div class=container1></div>
+
+                <div class=container2>
+                    <div id="polygono10">
+                        <div id="polygonoCor"><h2 class="valorShape">10</h2></div>
+                    </div>
+                    <p id="textPolygono" class="textBotom">
+                        Atividades<br>
+                        protostas
+                    </p>  
+                </div>
+
+                <div class=container3>
+                    <div id="circulo68">
+                        <h2 class="valorShape">68</h2><p id="mil">mil</p>
+                    </div>
+                    <p id="textCirculo" class="textBotom">
+                        Investidos<br> 
+                        no futuro
+                    </p>  
+                </div>
+
+                <div class=container4>
+                    <div id="flor374">
+                        <div id="florCor">
+                            <h2 class="valorShape">374</h2>
+                        </div>
+                    </div>
+                    <p id="textFlor" class="textBotom">
+                        Crianças<br>
+                        Atendidas
+                    </p>  
+                </div>
+
+                <div class=container5>
+                    <div id="estrela20">
+                        <div id="estrelaCor">
+                            <h2 id="estrelaNumero" class="valorShape">20</h2>
+                        </div>
+                    </div>
+                    <p id="textEstrela" class="textBotom">
+                        Time<br>
+                        Colaborativo
+                    </p>  
+                </div>
+
+            </div>
+
     </section>
+
 </div>
 
-<style>
-    .institucional {
+        <style>
+            .institucional{
+                width: 100%;
+                height: 1449px;
+                box-sizing: border-box;
+                background-color: #000;
+            }
+            #institucional {
                 max-width: 1440px;
                 height: 1449px;
                 align-items: center;
@@ -89,27 +122,36 @@
                 font-family: 'encode sans';
                 margin: auto;
             }
+            .buiu{
+                max-width: 448px;
+                margin: 0% 10.5% 0% 10.5%;
+            }
+            #buiuIMG {
+                width: 100%;
+            }
             .pontaPeInicial{
-                padding: 0px 142px 10px 142px;
+                padding-bottom: 10px;
                 display:flex;
             }
             .textPontaPeInicial {
                 display:flex;
                 flex-direction: column;
                 justify-content: center;
-                margin-left: 142px;
+                margin-right: 12%;
             }
             h3 {
                 font-family: 'encode sans';
                 font-weight:500;
                 font-size: 16px;
                 line-height: 150%;
+                margin-bottom: 0%;
 
             }
             h2 {
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 50px;
+                margin-top: 8px;
             }
             h4 {
                 font-weight: 700;
@@ -121,10 +163,12 @@
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 150%;
+                display: block;
 
             }
             .metodo {
-                padding: 0px 142px 10px 142px;
+                padding-bottom: 10px;
+                margin: 0% 10% 0% 10.5%;
                 display:flex;
                 justify-content: space-between;
             }
@@ -230,8 +274,8 @@
                 background-color:#FFFFFF;
                 position: relative;
                 top:100px;
-                right:80px;
-                transform: rotate(15deg);
+                right:85px;
+                transform: rotate(18deg);
                 width: 168px;
                 height: 168px;
                 background-color:#FFFFFF;
@@ -245,8 +289,8 @@
                 clip-path: polygon(75.2736% 50%, 75.3253% 49.4695%, 75.4798% 48.9321%, 75.7351% 48.3809%, 76.0876% 47.8094%, 76.5309% 47.2115%, 77.0558% 46.5821%, 77.6499% 45.917%, 78.2983% 45.2137%, 78.9851% 44.4708%, 79.6951% 43.6881%, 80.4157% 42.8661%, 81.1383% 42.0051%, 81.8582% 41.105%, 82.5741% 40.1653%, 83.287% 39.1844%, 83.9989% 38.1603%, 84.7124% 37.0906%, 85.4289% 35.9727%, 86.1474% 34.8051%, 86.8627% 33.5877%, 87.5634% 32.324%, 88.2313% 31.0218%, 88.8412% 29.6943%, 89.3636% 28.3597%, 89.7676% 27.0402%, 90.0247% 25.7602%, 90.111% 24.5448%, 90.0095% 23.4177%, 89.7108% 22.4003%, 89.2127% 21.5103%, 88.5202% 20.7616%, 87.6449% 20.1631%, 86.6043% 19.7183%, 85.4217% 19.4248%, 84.125% 19.2737%, 82.7452% 19.2502%, 81.3144% 19.3347%, 79.8634% 19.5045%, 78.4186% 19.7372%, 77.0002% 20.0132%, 75.6214% 20.3173%, 74.2889% 20.6398%, 73.0043% 20.9758%, 71.7665% 21.3237%, 70.5725% 21.6844%, 69.4193% 22.0593%, 68.3043% 22.4497%, 67.2259% 22.8563%, 66.1837% 23.2775%, 65.1792% 23.7088%, 64.2155% 24.1421%, 63.2967% 24.5657%, 62.4274% 24.9651%, 61.6113% 25.3246%, 60.8505% 25.6293%, 60.1449% 25.8662%, 59.4925% 26.0248%, 58.8893% 26.0973%, 58.3305% 26.0782%, 57.81% 25.9634%, 57.3214% 25.7503%, 56.858% 25.4373%, 56.4127% 25.0241%, 55.9781% 24.5123%, 55.5465% 23.906%, 55.11% 23.2122%, 54.6611% 22.4417%, 54.1926% 21.6076%, 53.6983% 20.7249%, 53.1733% 19.8079%, 52.6142% 18.8685%, 52.0186% 17.9152%, 51.3851% 16.9524%, 50.7126% 15.9811%, 50% 15%, 49.246% 14.0064%, 48.4491% 12.9973%, 47.6074% 11.9705%, 46.7189% 10.9263%, 45.7822% 9.86985%, 44.7969% 8.81286%, 43.7648% 7.77531%, 42.6907% 6.78505%, 41.5829% 5.87581%, 40.4528% 5.08376%, 39.3149% 4.44377%, 38.1856% 3.98612%, 37.0824% 3.73431%, 36.0224% 3.704%, 35.0221% 3.90269%, 34.096% 4.32993%, 33.2563% 4.97749%, 32.5117% 5.82969%, 31.8672% 6.86368%, 31.3228% 8.05027%, 30.8741% 9.35531%, 30.5122% 10.7421%, 30.2253% 12.1746%, 30.0002% 13.6206%, 29.8244% 15.0548%, 29.6875% 16.4601%, 29.5825% 17.8271%, 29.505% 19.1526%, 29.4535% 20.4374%, 29.4275% 21.6844%, 29.4277% 22.897%, 29.4545% 24.078%, 29.5079% 25.2293%, 29.5864% 26.3507%, 29.6862% 27.4393%, 29.8005% 28.4898%, 29.9195% 29.4945%, 30.0307% 30.4446%, 30.1204% 31.3319%, 30.1751% 32.1496%, 30.1823% 32.8938%, 30.1315% 33.5634%, 30.0141% 34.1594%, 29.8232% 34.685%, 29.5532% 35.1446%, 29.1996% 35.5434%, 28.7587% 35.8873%, 28.2282% 36.1832%, 27.6071% 36.4384%, 26.897% 36.6615%, 26.1024% 36.8622%, 25.2309% 37.051%, 24.2929% 37.2389%, 23.3006% 37.4362%, 22.2662% 37.6521%, 21.2% 37.8936%, 20.1093% 38.1654%, 18.9978% 38.4704%, 17.8663% 38.8099%, 16.713% 39.1844%, 15.5351% 39.5944%, 14.3291% 40.0405%, 13.0924% 40.5237%, 11.8248% 41.0461%, 10.5306% 41.6105%, 9.22085% 42.221%, 7.91515% 42.8819%, 6.64146% 43.5974%, 5.43436% 44.37%, 4.33186% 45.2001%, 3.37157% 46.0845%, 2.58736% 47.017%, 2.00696% 47.9885%, 1.65057% 48.9872%, 1.53042% 50%, 1.65057% 51.0128%, 2.00696% 52.0115%, 2.58736% 52.983%, 3.37157% 53.9155%, 4.33186% 54.7999%, 5.43436% 55.63%, 6.64146% 56.4026%, 7.91515% 57.1181%, 9.22085% 57.779%, 10.5306% 58.3895%, 11.8248% 58.9539%, 13.0924% 59.4763%, 14.3291% 59.9595%, 15.5351% 60.4056%, 16.713% 60.8156%, 17.8663% 61.1901%, 18.9978% 61.5296%, 20.1093% 61.8346%, 21.2% 62.1064%, 22.2662% 62.3479%, 23.3006% 62.5638%, 24.2929% 62.7611%, 25.2309% 62.949%, 26.1024% 63.1378%, 26.897% 63.3385%, 27.6071% 63.5616%, 28.2282% 63.8168%, 28.7587% 64.1127%, 29.1996% 64.4566%, 29.5532% 64.8554%, 29.8232% 65.315%, 30.0141% 65.8406%, 30.1315% 66.4366%, 30.1823% 67.1061%, 30.1751% 67.8504%, 30.1204% 68.6681%, 30.0307% 69.5554%, 29.9195% 70.5055%, 29.8005% 71.5102%, 29.6862% 72.5607%, 29.5864% 73.6493%, 29.5079% 74.7707%, 29.4545% 75.922%, 29.4277% 77.103%, 29.4275% 78.3156%, 29.4535% 79.5626%, 29.505% 80.8474%, 29.5825% 82.1729%, 29.6875% 83.5398%, 29.8244% 84.9452%, 30.0002% 86.3794%, 30.2253% 87.8254%, 30.5122% 89.2579%, 30.8741% 90.6447%, 31.3228% 91.9497%, 31.8672% 93.1363%, 32.5117% 94.1703%, 33.2563% 95.0225%, 34.096% 95.6701%, 35.0221% 96.0973%, 36.0224% 96.296%, 37.0824% 96.2657%, 38.1856% 96.0139%, 39.3149% 95.5562%, 40.4528% 94.9162%, 41.5829% 94.1242%, 42.6907% 93.2149%, 43.7648% 92.2247%, 44.7969% 91.1871%, 45.7822% 90.1301%, 46.7189% 89.0737%, 47.6074% 88.0295%, 48.4491% 87.0027%, 49.246% 85.9936%, 50% 85%, 50.7126% 84.0189%, 51.3851% 83.0476%, 52.0186% 82.0848%, 52.6142% 81.1315%, 53.1733% 80.1921%, 53.6983% 79.2751%, 54.1926% 78.3923%, 54.6611% 77.5583%, 55.11% 76.7878%, 55.5465% 76.094%, 55.9781% 75.4877%, 56.4127% 74.9759%, 56.858% 74.5627%, 57.3214% 74.2497%, 57.81% 74.0366%, 58.3305% 73.9218%, 58.8893% 73.9027%, 59.4925% 73.9752%, 60.1449% 74.1338%, 60.8505% 74.3707%, 61.6113% 74.6754%, 62.4274% 75.0349%, 63.2967% 75.4343%, 64.2155% 75.8579%, 65.1792% 76.2912%, 66.1837% 76.7225%, 67.2259% 77.1437%, 68.3043% 77.5502%, 69.4193% 77.9407%, 70.5725% 78.3156%, 71.7665% 78.6763%, 73.0043% 79.0242%, 74.2889% 79.3602%, 75.6214% 79.6827%, 77.0002% 79.9868%, 78.4186% 80.2628%, 79.8634% 80.4955%, 81.3144% 80.6654%, 82.7452% 80.7497%, 84.125% 80.7263%, 85.4217% 80.5752%, 86.6043% 80.2817%, 87.6449% 79.8369%, 88.5202% 79.2384%, 89.2127% 78.4897%, 89.7108% 77.5997%, 90.0095% 76.5823%, 90.111% 75.4552%, 90.0247% 74.2398%, 89.7676% 72.9598%, 89.3636% 71.6403%, 88.8412% 70.3057%, 88.2313% 68.9782%, 87.5634% 67.676%, 86.8627% 66.4123%, 86.1474% 65.1949%, 85.4289% 64.0273%, 84.7124% 62.9094%, 83.9989% 61.8397%, 83.287% 60.8156%, 82.5741% 59.8347%, 81.8582% 58.895%, 81.1383% 57.9949%, 80.4157% 57.1339%, 79.6951% 56.3119%, 78.9851% 55.5292%, 78.2983% 54.7863%, 77.6499% 54.083%, 77.0558% 53.4179%, 76.5309% 52.7885%, 76.0876% 52.1906%, 75.7351% 51.6191%, 75.4798% 51.0679%, 75.3253% 50.5305%);
             }
             #estrelaNumero{
-                transform: rotate(-15deg);
-                margin: 55px 0px 0px 8px;
+                transform: rotate(-18deg);
+                margin: 55px 0px 0px 3px;
             }
             
             .container5{
@@ -278,12 +322,11 @@
             #textFlor {
                 position: relative;
                 top: 30px;
-                right: 135px;
+                right: 139px;
             }
             #textEstrela {
                 position: relative;
                 top:105px;
-                right:90px;
+                right:102px;
             }
-</style>
- 
+        </style>
