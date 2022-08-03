@@ -23,6 +23,20 @@
             paragraph:
                 "Em  Meados de 2009 Anderson “buiu” sentiu a necessidade de retribuir ao mundo a ajuda que recebeu a decidiu fazer na frente “de casa” um cinema para as crianças da comunidade.",
         },
+        {
+            index: 3,
+            title: "Música",
+            image: "./jiujitsu.svg",
+            paragraph:
+                "Em  Meados de 2009 Anderson “buiu” sentiu a necessidade de retribuir ao mundo a ajuda que recebeu a decidiu fazer na frente “de casa” um cinema para as crianças da comunidade.",
+        },
+        {
+            index: 4,
+            title: "Música",
+            image: "./jiujitsu.svg",
+            paragraph:
+                "Em  Meados de 2009 Anderson “buiu” sentiu a necessidade de retribuir ao mundo a ajuda que recebeu a decidiu fazer na frente “de casa” um cinema para as crianças da comunidade.",
+        },
     ];
     let carousel;
     function goToPrevPage() {
@@ -30,6 +44,9 @@
     }
     function goToNextPage() {
         carousel.goToNext({ animated: true });
+    }
+    function goToPage(index) {
+        carousel.goTo(index, { animated: true });
     }
 </script>
 
@@ -67,42 +84,53 @@
         <Carousel
             particlesToShow={3}
             bind:this={carousel}
-            dots={false}
             arrows={false}
+            let:currentPageIndex
+            let:pagesCount
+            let:showPage
         >
+            <div slot="dots" class="custom-dots">
+                {#each cards as card}
+                    <button
+                        class="dots {card.index == currentPageIndex
+                            ? 'active-dots'
+                            : ''}"
+                        style="margin-left: {card.index == cards.length
+                            ? '0px'
+                            : '16px'} ;"
+                        on:click={() => goToPage(card.index)}
+                    />
+                {/each}
+            </div>
             {#each cards as card}
-                <div
-                    class="card"
-                    style="
-                {card.index === 0
-                        ? 'margin-right: 16px;'
-                        : 'margin-inline: 16px;'}
-                {card.index === 2
-                        ? 'margin-left: 16px;'
-                        : 'margin-inline: 16px;'}
-                "
-                >
-                    <div class="card-content">
-                        <h4>{card.title}</h4>
-                        <div class="icones" id="icoPolygon">
-                            <img
-                                id="imgNoRacismo"
-                                alt="Punho"
-                                src="noRacismo.png"
-                            />
+                <div class="card-spacing">
+                    <div class="card">
+                        <div class="card-content">
+                            <h4 class="card-title">{card.title}</h4>
+                            <div class="icones">
+                                <div id="icoPolygon">
+                                    <img
+                                        id="imgNoRacismo"
+                                        alt="Punho"
+                                        src="noRacismo.png"
+                                    />
+                                </div>
+                            </div>
+
+                            <img src={card.image} alt={card.title} />
+                            <p class="card-paragraph">{card.paragraph}</p>
                         </div>
-                        <img src={card.image} alt={card.title} />
-                        <p>{card.paragraph}</p>
                     </div>
                 </div>
             {/each}
         </Carousel>
+
         <div class="div-buttons-carousel">
             <button class="button-carousel" on:click={goToPrevPage}>
-                <img src="" alt="" />
+                <img src="./Arrow2.svg" alt="arrow" />
             </button>
             <button class="button-carousel" on:click={goToNextPage}>
-                <img src="" alt="" />
+                <img src="./Arrow1.svg" alt="arrow" />
             </button>
         </div>
     </div>
@@ -121,19 +149,99 @@
     }
     .content {
         padding-left: 142px;
+        display: flex;
+        flex-direction: column;
     }
-    .icones {
-        position: absolute;
-        z-index: 1;
+    .dots {
+        height: 20px;
+        width: 20px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        background-color: #000;
+    }
+    .custom-dots{
+        align-self: flex-start;
+        margin-top:25px;
+    }
+    .active-dots {
+        background: #ffdb00;
     }
     #imgNoRacismo {
         width: 12px;
         height: 15px;
     }
-    #icoPolygon {
+    .card-title {
+        color: #000;
+        font-weight: bold;
+        size: 16px;
+        line-height: 24px;
+        margin-bottom: 16px;
+    }
+    .card-paragraph {
+        color: #000;
+        size: 16px;
+        line-height: 24px;
+    }
+    .card {
+        height: 444px;
+        width: 330px;
+        margin-block: 32px;
+        border: 2px solid #000;
+        background: #ffdb00;
+        box-shadow: -10px 10px #fff;
+    }
+    .card-content {
+        margin-inline: 24px;
+        margin-block: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    .card-spacing {
+        position: relative;
+        box-sizing: content-box;
+        margin: 16px;
+        left: -70px;
+    }
+    .icones {
+        position: absolute;
+        z-index: 1;
         transform: rotate(-15deg);
-        width: 63px;
-        height: 63px;
+
+        align-self: flex-end;
+        top: 75px;
+        width: 65px;
+        height: 65px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        clip-path: polygon(
+            100% 50%,
+            74.73% 58.03%,
+            90.45% 79.39%,
+            65.28% 71.03%,
+            65.45% 97.55%,
+            50% 76%,
+            34.55% 97.55%,
+            34.72% 71.03%,
+            9.55% 79.39%,
+            25.27% 58.03%,
+            0% 50%,
+            25.27% 41.97%,
+            9.55% 20.61%,
+            34.72% 28.97%,
+            34.55% 2.45%,
+            50% 24%,
+            65.45% 2.45%,
+            65.28% 28.97%,
+            90.45% 20.61%,
+            74.73% 41.97%
+        );
+    }
+    #icoPolygon {
+        width: 60px;
+        height: 60px;
         align-items: center;
         display: flex;
         justify-content: center;
@@ -414,30 +522,27 @@
         width: 1000px;
     }
     .button-carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 50px;
         width: 50px;
         border: 2px #fff solid;
         background: #ffdb00;
         border-radius: 50%;
     }
+
     .div-buttons-carousel {
+        width: 47vw;
+        position: relative;
+        top: -85px;
         display: flex;
         flex-direction: row;
+        justify-content: flex-end;
         margin-top: 42px;
         gap: 24px;
     }
-    .card {
-        height: 444px;
-        width: 330px;
-        margin-block: 32px;
-        border: 2px solid #000;
-        background: #ffdb00;
-        box-shadow: -10px 10px #fff;
-    }
-    .card-content {
-        margin-inline: 24px;
-        margin-block: 32px;
-    }
+
     .iconenuvem {
         width: 45px;
         height: 45px;
