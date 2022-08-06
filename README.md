@@ -1,107 +1,50 @@
-# This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework and don't mind using pre-1.0 software — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
+# Projeto Viela ⭐
 
----
+![Gif Projeto Viela](https://user-images.githubusercontent.com/106499228/183254757-bae5a670-3649-4113-98dd-5c6c156dd569.gif)
 
-# svelte app
+## ⭐ Descrição
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+ O Projeto Viela é um projeto social criado em 2009, que visa oferecer caminhos alternativos para a formação de jovens e crianças, por meio de atividades culturais, esportivas, e pedagógicas, em sua jornada até o início da vida adulta.</br>
+ A nova página do o projeto foi criada através da iniciativa Mulheres no código, que orienta mulheres que desejam migrar para a área de tecnologia, com foco no desenvolvimento para Front End(HTML5,CSS3 e JavaScript).
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+## 📁 Como acessar o projeto 📁
 
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
+▪ Você pode copiar o projeto usando o git através do link " https://github.com/joaovguimaraes/Viela.git" ou fazer o Download do arquivo ZIP.
 
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
+## ⚠️ Orientações ⚠️
 
+▪ Para rodar o projeto você vai precisar ter o [Node.js](https://nodejs.org) instalado na sua máquina. </br>
+▪ Se o projeto for baixado via zip, será necessário realizar a extração dos arquivos para poder acessalos. </br>
+▪ Se você estiver usando o Visual Studio Code, recomendamos instalar a extensão oficial Svelte for VS Code. </br>
+▪ Se você estiver usando outros editores, talvez seja necessário instalar um plug-in para obter realce de sintaxe e intellisense. </br>
 
-## Get started
+## ⚙️ Como rodar o projeto ⚙️
 
-Install the dependencies...
+▪ Instale as dependencias: 
 
 ```bash
 cd svelte-app
 npm install
 ```
-
-...then start [Rollup](https://rollupjs.org):
+▪ Execute: 
 
 ```bash
 npm run dev
 ```
 
-Navigate to [localhost:8080](http://localhost:8080). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+▪ Para ver o aplicativo em execução navegue até localhost:8080. </br>
+▪ Edite um arquivo de componente em src, salve-o e recarregue a página para ver suas alterações. </br>
+▪ Por padrão, o servidor responderá apenas às solicitações do localhost. Para permitir conexões de outros computadores, edite os comandos sirv em package.json para incluir a opção --host 0.0.0.0.  </br>
 
-By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
+## 🛠️ Tecnologias utilizadas 🛠️
 
-If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommend installing the official extension [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode). If you are using other editors you may need to install a plugin in order to get syntax highlighting and intellisense.
+▪ Svelte </br>
+▪ JavaScript
 
-## Building and running in production mode
+## 💻 Desenvolvedoras do Projeto 💻
 
-To create an optimised version of the app:
-
-```bash
-npm run build
-```
-
-You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
+▪ Aline de Nadai </br>
+▪ Bárbara Altissimo </br>
+▪ Caroline Silva 
 
 
-## Single-page app mode
-
-By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
-
-If you're building a single-page app (SPA) with multiple routes, sirv needs to be able to respond to requests for *any* path. You can make it so by editing the `"start"` command in package.json:
-
-```js
-"start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
-```
-
-If you want to use `baseUrl` or `path` aliases within your `tsconfig`, you need to set up `@rollup/plugin-alias` to tell Rollup to resolve the aliases. For more info, see [this StackOverflow question](https://stackoverflow.com/questions/63427935/setup-tsconfig-path-in-svelte).
-
-## Deploying to the web
-
-### With [Vercel](https://vercel.com)
-
-Install `vercel` if you haven't already:
-
-```bash
-npm install -g vercel
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-vercel deploy --name my-project
-```
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```
